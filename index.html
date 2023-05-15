@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Progate</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="header-wrapper">
+                        <div class="logo-header">
+                            <h2>NINJA KEN</h2>
+                        </div>
+                        <div class="navbar-header">
+                            <a href="#">Tentang Saya</a>
+                            <a href="#">Proyek Contoh</a>
+                            <a href="#">Hubungi Saya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-wrapper">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h1>NINJA KEN<span>.</span></h1>
+                    <p>MY PORTFOLIO</p>
+                    <img src="./image/Ninja Ken.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutme">
+            <div class="container">
+                <div class="aboutme-wrapper">
+                    <h1>Tentang Saya</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-container">
+            <div class="container">
+                <div class="project-wrapper">
+                    <h2>Proyek Contoh</h2>
+                    <div class="projects">
+                        <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+                        <div class="project">
+                            <img src="./image/1.png">
+                            <p>Image 1</p>
+                        </div>
+                        <div class="project ">
+                            <img src="./image/2.png">
+                            <p>Image 2</p>
+                        </div>
+                        <div class="project">
+                            <img src="./image/3.png">
+                            <p>Image 3</p>
+                        </div>
+                        <a class="next" onclick="updateSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="modal">
+                        <img src="./image/1.png">
+                        <img src="./image/2.png">
+                        <img src="./image/3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+
+
+
+        <div class="contactme">
+            <div class="container">
+                <div class="contactme-wrapper">
+                    <h1>Hubungi Saya</h1>
+                    <div class="form-wrapper">
+                        <form>
+                            <input id="form1"  type="email" placeholder="Email (Diperlukan)">
+                            <textarea id="form2" placeholder="Message (Diperlukan)"></textarea>
+                            <input id="submit" class="button-submit" type="submit" value="kirim pesan">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div class="questions">
+                <div class="question">
+                    <p>Why is the sky blue?</p>
+                    <a class="btn-accord">+</a>
+                </div>
+                <div class="accord">
+                    <p>answer1</p>
+                    <p>answer2</p>
+                    <p>answer3</p>
+                </div>
+                <div class="question">
+                    <p>Why is the sky blue?</p>
+                    <a class="btn-accord">+</a>
+                </div>
+                <div class="accord">
+                    <p>answer1</p>
+                    <p>answer2</p>
+                    <p>answer3</p>
+                </div>
+                <div class="question">
+                    <p>Why is the sky blue?</p>
+                    <a class="btn-accord">+</a>
+                </div>
+                <div class="accord">
+                    <p>answer1</p>
+                    <p>answer2</p>
+                    <p>answer3</p>
+                </div>
+
+                <script>
+                      document.addEventListener('DOMContentLoaded', () => {
+                            const accordion = document.getElementsByClassName("question");
+                            const panel = document.getElementsByClassName("accord");
+
+                            for (let i = 0; i < accordion.length; i++) {
+                            accordion[i].addEventListener('click', () => {
+                                if (window.getComputedStyle(panel[i]).display === 'none') {
+                                panel[i].style.display = 'block';
+                                } else {
+                                panel[i].style.display = 'none';
+                                }
+                            });
+                            }
+                        });
+                </script>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="logo-footer">
+                        <h2>NINJA KEN</h2>
+                    </div>
+                    <div class="navbar-footer">
+                        <a href="#">Tentang Saya</a>
+                        <a href="#">Proyek Contoh</a>
+                        <a href="#">Hubungi Saya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

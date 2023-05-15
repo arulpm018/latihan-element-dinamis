@@ -1,0 +1,324 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Avenir Next LT Pro';
+    color:#404146;
+}
+
+.header{
+    width: 100%;
+    background-color: #404146 ;
+}
+
+.container{
+    width: 100%;
+}
+
+.header-wrapper{
+    display:flex;
+    align-items: center;
+    
+}
+
+.logo-header{
+    color:white;
+    margin-left:30px;
+}
+
+.navbar-header{
+    margin-left:60px;
+}
+
+
+.navbar-header a{
+    padding:10px;
+    color:white;
+    text-decoration:none;
+}
+
+.top-wrapper{
+    background-color: white;
+}
+
+.content-wrapper{
+    color:#404146;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper h1{
+    letter-spacing: 2px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    font-size: 120px;
+}
+
+.content-wrapper p{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top:20px;
+    margin-bottom:0px;
+}
+
+@keyframes zoom-in-out {
+    0% { transform: scale(1); }
+    25% { transform: scale(0.6); }
+    50% { transform: scale(0.7); }
+    75% { transform: scale(0.6); }
+    100% { transform: scale(1); }
+ }
+
+.content-wrapper img{
+    animation-name: zoom-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    margin-top:20px;
+    height:360px;
+    width:360px
+}
+
+.content-wrapper img:hover{
+    transform: scale(0.5);
+    filter:drop-shadow(8px 8px 10px gray);
+    transition: all 0.5s ease;
+}
+
+span{
+    color:#f1d00e;
+}
+
+.aboutme{
+    width:100%;
+    background-color: #f4f4f4;
+}
+
+.aboutme-wrapper{
+    padding:60px;
+    color: #404146;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme-wrapper h1{
+    margin-bottom:30px;
+}
+
+.aboutme-wrapper p{
+    font-size:20px;
+    margin:0px 150px;
+    text-align:center;
+    line-height: 1.5;
+}
+
+.project-container{
+
+    margin:0 0;
+    background-color: white;
+
+}
+
+.project-wrapper{
+    margin-top:60px;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+}
+
+.projects{
+    align-items: center;
+    margin-top:50px;
+    display:flex;
+    gap:100px;
+}
+
+.project{
+    display:none;
+    width:100%;
+    text-align: center;
+}
+
+.project img{
+    width:300px;
+}
+
+.contactme{
+    width:100%;
+    background-color: #f4f4f4;
+}
+
+.contactme-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactme-wrapper h1{
+    margin-top:80px;
+    margin-bottom:60px;
+}
+
+input{
+    font-size:15px;
+    padding-left:20px;
+    width:800px;
+    height:60px;
+    margin-bottom:20px;
+    border:none;
+    border-radius: 15px;
+    background-color: white;
+}
+
+textarea{
+    font-family: 'Avenir Next LT Pro';
+    font-size:15px;
+    padding-left:20px;
+    width:800px;
+    height:120px;
+    margin-bottom:40px;
+    border:none;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.button-submit{
+    width:400px;
+    background-color: #f7e989;
+}
+
+.footer{
+    width:100%;
+    background-color: #7c7d82;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer{
+    margin-top:10px;
+    color:white;
+    margin-left: 30px;
+}
+
+.navbar-footer{
+    margin-top: 25px;
+}
+
+.navbar-footer a{
+    font-size: 15px;
+    display:block;
+    padding:10px;
+    color:white;
+    text-decoration:none;
+}
+
+.prev,
+.next {
+    padding-bottom:60px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.scrollRight{
+    animation-name: scrollright;
+    animation-duration: 1.5s;
+
+  }
+
+  .scrollLeft{
+    animation-name: scrollleft;
+    animation-duration: 1.5s;
+
+  }
+
+  @keyframes scrollright{
+    from {
+        transform:translateX(-200px);
+        opacity:0;
+      }
+      to {
+        transform:translateX(0px);
+        opacity: 1;
+      }
+  }
+
+  @keyframes scrollleft{
+    from {
+        transform:translateX(200px);
+        opacity:0;
+      }
+      to {
+        transform:translateX(0px);
+        opacity: 1;
+      }
+  }
+
+  .modal{
+    background-color: rgba(0, 0, 0, 0.4);
+    width:100%;
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+
+  }
+
+  .modal img{
+    display:none;
+    margin:100px 0;
+    width:40%;
+  }
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.faq{
+    margin-top:120px;
+    margin-bottom:120px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.questions{
+    display:flex;
+    flex-direction: column;
+}
+
+.question{
+    cursor: pointer;
+    border-bottom: #404146 2px solid;
+    display:flex;   
+    justify-content: space-between;
+}
+
+.question a{
+
+    display:inline-block;
+    margin-top: 15px;
+    margin-left:100px;
+}
+
+.accord{
+    display:none;
+}
